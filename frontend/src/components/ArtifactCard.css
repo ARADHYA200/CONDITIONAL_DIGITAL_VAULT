@@ -1,0 +1,203 @@
+.artifact-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #667eea;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.artifact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.artifact-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 12px;
+}
+
+.artifact-header h3 {
+  color: #333;
+  font-size: 20px;
+  margin: 0;
+  flex: 1;
+}
+
+.state-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.state-locked {
+  background: #ffe0e0;
+  color: #c33;
+}
+
+.state-visible {
+  background: #e0ffe0;
+  color: #3c3;
+}
+
+.state-transformed {
+  background: #fff4e0;
+  color: #c93;
+}
+
+.state-archived {
+  background: #e0f4ff;
+  color: #39c;
+}
+
+.state-destroyed {
+  background: #e0e0e0;
+  color: #666;
+}
+
+.artifact-meta {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #666;
+}
+
+.category {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.artifact-content {
+  margin: 16px 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+.locked-content {
+  color: #999;
+  font-style: italic;
+  text-align: center;
+  padding: 20px;
+}
+
+.time-remaining {
+  background: #fff4e0;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #c93;
+  font-weight: 500;
+}
+
+.artifact-conditions {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.artifact-conditions h4 {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.condition-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  font-size: 13px;
+}
+
+.condition-type {
+  color: #666;
+  text-transform: capitalize;
+}
+
+.condition-status {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.condition-status.satisfied {
+  background: #e0ffe0;
+  color: #3c3;
+}
+
+.condition-status.pending {
+  background: #ffe0e0;
+  color: #c33;
+}
+
+.satisfy-button {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.satisfy-button:hover {
+  background: #764ba2;
+}
+
+.details-button {
+  width: 100%;
+  margin-top: 12px;
+  padding: 8px;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.details-button:hover {
+  background: #e0e0e0;
+}
+
+.artifact-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.artifact-actions button {
+  flex: 1;
+  min-width: 80px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #e9ecef;
+  color: #333;
+  font-size: 13px;
+}
+
+.artifact-actions .destroy-button {
+  background: #ffe3e3;
+  color: #c92a2a;
+}
+
+.artifact-actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #c92a2a;
+  font-size: 13px;
+  margin-top: 8px;
+}
